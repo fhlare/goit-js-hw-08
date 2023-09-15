@@ -10,6 +10,10 @@ const currentLocalData = JSON.parse(localStorage.getItem(KEY_STORAGE));
 if (currentLocalData) {
   form.email.value = currentLocalData.email;
   form.message.value = currentLocalData.message;
+      currentData = {
+      email: form.email.value,
+      message: form.message.value,
+    };
 };
   
   function onInput() {
